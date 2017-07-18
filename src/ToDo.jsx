@@ -9,6 +9,8 @@ class ToDo extends React.Component {
                 <Task done name="OptionA" />
                 <Task done name="OptionB" />
                 <Task done={false} name="OptionC" />
+                <Task/>
+                <Task done={true} />
             </ul>
         )
     }

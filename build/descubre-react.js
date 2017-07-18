@@ -22408,7 +22408,9 @@
 	                null,
 	                _react2.default.createElement(_Task2.default, { done: true, name: 'OptionA' }),
 	                _react2.default.createElement(_Task2.default, { done: true, name: 'OptionB' }),
-	                _react2.default.createElement(_Task2.default, { done: false, name: 'OptionC' })
+	                _react2.default.createElement(_Task2.default, { done: false, name: 'OptionC' }),
+	                _react2.default.createElement(_Task2.default, null),
+	                _react2.default.createElement(_Task2.default, { done: true })
 	            );
 	        }
 	    }]);
@@ -22466,6 +22468,14 @@
 	    return Task;
 	}(_react2.default.Component);
 
+	Task.propTypes = {
+	    name: _react2.default.PropTypes.string,
+	    done: _react2.default.PropTypes.bool
+	};
+	Task.defaultProps = {
+	    name: 'Unknown task',
+	    done: false
+	};
 	;
 
 	exports.default = Task;
