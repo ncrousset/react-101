@@ -22409,7 +22409,7 @@
 	                _react2.default.createElement(_Task2.default, { done: true, name: 'OptionA' }),
 	                _react2.default.createElement(_Task2.default, { done: true, name: 'OptionB' }),
 	                _react2.default.createElement(_Task2.default, { done: false, name: 'OptionC' }),
-	                _react2.default.createElement(_Task2.default, null)
+	                _react2.default.createElement(_Task2.default, { name: 'OptionD' })
 	            );
 	        }
 	    }]);
@@ -22472,7 +22472,6 @@
 	    done: _react2.default.PropTypes.bool
 	};
 	Task.defaultProps = {
-	    name: 'Unknown task',
 	    done: false
 	};
 	;

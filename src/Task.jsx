@@ -8,7 +8,6 @@ class Task extends React.Component {
     };
 
     static defaultProps = {
-        name: 'Unknown task',
         done: false
     };
 
