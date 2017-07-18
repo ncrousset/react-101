@@ -22385,6 +22385,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactDom = __webpack_require__(38);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
 	var _Task = __webpack_require__(190);
 
 	var _Task2 = _interopRequireDefault(_Task);
@@ -22407,15 +22411,23 @@
 	    }
 
 	    _createClass(ToDo, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var el = _reactDom2.default.findDOMNode(this.refs.first);
+	            console.log(this.refs);
+	            _reactDom2.default.findDOMNode(this.refs.first);
+	            console.log(el);
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'ul',
 	                null,
-	                _react2.default.createElement(_Task2.default, { done: true, name: 'OptionA' }),
+	                _react2.default.createElement(_Task2.default, { ref: 'first', done: true, name: 'OptionA' }),
 	                _react2.default.createElement(_Task2.default, { done: true, name: 'OptionB' }),
 	                _react2.default.createElement(_Task2.default, { done: false, name: 'OptionC' }),
-	                _react2.default.createElement(_Task2.default, { name: 'OptionD' })
+	                _react2.default.createElement(_Task2.default, { ref: 'fourth', name: 'OptionD' })
 	            );
 	        }
 	    }]);
