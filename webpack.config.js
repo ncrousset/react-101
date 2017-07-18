@@ -6,7 +6,7 @@ module.exports = {
   },
   context: __dirname,
   entry: {
-    app: ['./index.jsx']
+    app: ['./app.jsx']
   },
   output: {
     path: './build',

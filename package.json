@@ -2,16 +2,11 @@
   "name": "descubre-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/descubre-react.js",
   "scripts": {
-    "build": "webpack --watch --colors",
-    "serve": "webpack-dev-server --progress --colors"
+    "build": "webpack --watch --colors"
   },
-  "keywords": [
-    "webpack",
-    "example",
-    "tutorial"
-  ],
+  "keywords": [],
   "author": "Rudys Acosyta",
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +15,8 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.2"
   },
