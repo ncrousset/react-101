@@ -22515,9 +22515,21 @@
 	    _inherits(Task, _React$Component);
 
 	    function Task() {
+	        var _ref;
+
+	        var _temp, _this, _ret;
+
 	        _classCallCheck(this, Task);
 
-	        return _possibleConstructorReturn(this, (Task.__proto__ || Object.getPrototypeOf(Task)).apply(this, arguments));
+	        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	            args[_key] = arguments[_key];
+	        }
+
+	        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Task.__proto__ || Object.getPrototypeOf(Task)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	            updated: false
+	        }, _this.handleClick = function (event) {
+	            _this.setState({ updated: true });
+	        }, _temp), _possibleConstructorReturn(_this, _ret);
 	    }
 
 	    _createClass(Task, [{
@@ -22525,8 +22537,13 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'li',
-	                { className: this.props.done ? 'done' : null },
-	                this.props.name
+	                { className: this.props.done ? 'done' : null, onClick: this.handleClick },
+	                this.props.name,
+	                this.state.updated ? _react2.default.createElement(
+	                    'small',
+	                    null,
+	                    'Updated...'
+	                ) : null
 	            );
 	        }
 	    }]);
