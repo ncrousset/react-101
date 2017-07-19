@@ -4,7 +4,8 @@
   "description": "",
   "main": "./build/descubre-react.js",
   "scripts": {
-    "build": "webpack --watch --colors"
+    "build": "webpack --watch --colors",
+    "serve": "webpack-dev-server --progress --colors"
   },
   "keywords": [],
   "author": "Rudys Acosyta",
@@ -18,7 +19,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.2"
+    "webpack-dev-server": "^1.16.5"
   },
   "dependencies": {
     "react": "^15.3.1",
