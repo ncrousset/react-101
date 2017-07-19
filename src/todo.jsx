@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Task from './Task';
+import Task from './task';
+import Tasks from './tasks';
 
 class ToDo extends React.Component {
 
     componentDidMount() {
         const el = ReactDOM.findDOMNode(this.refs.first);
-        console.log(this.refs);
         ReactDOM.findDOMNode(this.refs.first);
         console.log(el);
     }
 
     render() {
         return (
-            <ul>
+            <Tasks>
                 <Task ref='first' done name="OptionA" />
                 <Task done name="OptionB" />
                 <Task done={false} name="OptionC" />
                 <Task ref="fourth" name="OptionD" />
-            </ul>
+            </Tasks>
         )
     }
 
