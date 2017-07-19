@@ -8,6 +8,11 @@ module.exports = {
   entry: {
     app: ['./app.jsx']
   },
+    devServer: {
+        host: '127.0.0.1',
+        port: 8080,
+        inline: true
+    },
   output: {
     path: './build',
     filename: pkg.name + '.js',
